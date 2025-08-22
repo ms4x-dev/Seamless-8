@@ -42,7 +42,9 @@ done
 # Generate C header for Swift
 # -----------------------------
 echo "📄 Generating C header via cbindgen..."
-cbindgen --crate "$CRATE_NAME" --output "$INCLUDE_DIR/rust_core.h"
+cbindgen --crate "$CRATE_NAME" \
+        --config "$PROJECT_ROOT/cbindgen.toml" \
+        --output "$INCLUDE_DIR/rust_core.h"
 
 # -----------------------------
 # Create XCFramework
