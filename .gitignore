@@ -1,0 +1,13 @@
+# macOS junk
+.DS_Store
+
+# Xcode build
+DerivedData/
+*.xcuserstate
+
+# Rust build
+/RustCore/target/
+/RustCore/build/
+
+# General
+*.log

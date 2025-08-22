@@ -1,0 +1,15 @@
+//
+//  record.proto
+//  Seamless 8
+//
+//  Created by Richard on 13/8/2025.
+//
+
+
+syntax = "proto3";
+package demo;
+
+message Record {
+  map<string,string> fields = 1;
+  repeated uint64 values = 2;
+}
